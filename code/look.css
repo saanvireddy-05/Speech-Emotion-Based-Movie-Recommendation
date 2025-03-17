@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.upload-btn {
+    background-color: #AD133A;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.upload-btn:hover {
+    background: #83102B;
+}
+
+#file-name {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+button {
+    background-color: #FF5733;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #D84315;
+    transform: scale(1.05);
+}
+
+/* Emotion Section */
+.emotion-container {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Movie Recommendations */
+.movies-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.movie-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.movie-card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+
+    button, .upload-btn {
+        width: 100%;
+    }
+}

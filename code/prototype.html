@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion-Based Movie Recommender</title>
+    <link rel="stylesheet" href="look.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Emotion-Based Movie Recommender</h1>
+        <p>Upload an audio file, select a language, and get movie recommendations based on your emotion! 🎭</p>
+
+        <form id="upload-form">
+            <input type="file" id="file-upload" name="file" accept="audio/*" hidden>
+            <label for="file-upload" class="upload-btn">🎤 Choose Audio File</label>
+            <span id="file-name">No file chosen</span>
+
+            <select id="language-select">
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+
+            <button type="submit">🎥 Get Recommended Movies!</button>
+        </form>
+
+        <div id="emotion-container" class="emotion-container"></div>
+
+        <div id="movies-container" class="movies-container">
+            
+        </div>
+    </div>
+    <script>
+        async function processAudio() {
+            const fileInput = document.getElementById('audioFile');
+            if (fileInput.files.length === 0) {
+                alert("Please select a file first.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            try {
+                const response = await fetch("http://localhost:5000/recognize", {
+                    method: "POST",
+                    body: formData
+                });
+
+                const data = await response.json();
+                document.getElementById("result").innerText = `🧠 Detected Emotion: ${data.emotion}`;
+            } catch (error) {
+                console.error("Error:", error);
+                document.getElementById("result").innerText = "Emotion: ❌ Error recognizing emotion";
+            }
+        }
+    </script>
+
+</body>
+</html>
