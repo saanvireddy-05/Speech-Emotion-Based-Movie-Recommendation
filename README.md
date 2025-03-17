@@ -55,11 +55,9 @@ o Download RAVDESS Dataset
 o Extract and place it in the correct folder as referenced in the code. 
 o Update the dataset path in the notebook or Flask app if needed. 
 Link for Trained Model: 
-https://drive.google.com/file/d/1Ka5RIAwvkVDy3qWR5V8QTmbOOsjhHOhT/view?usp=s
- haring 
+https://drive.google.com/file/d/1Ka5RIAwvkVDy3qWR5V8QTmbOOsjhHOhT/view?usp=sharing 
 DEMO VIDEO                       
-https://drive.google.com/file/d/1B8wypc7OWDciAkM6gANHpNdKxuYOGbta/view?usp=s
- haring 
+https://drive.google.com/file/d/1B8wypc7OWDciAkM6gANHpNdKxuYOGbta/view?usp=sharing 
 File Structure 
 SPEECH-Emotion-Based-Movie-Recommender-System 
 ├── flask1.ipynb 
