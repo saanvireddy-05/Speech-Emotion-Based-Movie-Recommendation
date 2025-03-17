@@ -1,0 +1,2 @@
+# Speech-emoEmotion-Based-Movie-Recommendation-Using-Speechtion-detection-and-
+"Emotion-Based Movie Recommendation Using Speech" is a system that suggests movies based on the user's current mood, analyzed through speech emotion recognition (SER) and deep learning. It offers personalized recommendations by detecting emotional cues, enhancing user engagement and satisfaction in entertainment and mental health support.
