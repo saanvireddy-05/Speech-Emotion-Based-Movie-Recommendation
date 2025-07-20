@@ -52,7 +52,7 @@ mv flask1.py app.py   # On Linux/Mac
 ren flask1.py app.py  # On Windows
 ```
 8. Run Flask manually:
-9.
+9.Or by using
 ``` bash
 python app.py
 ```
