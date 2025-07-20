@@ -16,18 +16,24 @@ How To Run?
 Install Required Dependencies 
 Install the necessary libraries manually. 
 1. Open a terminal or command prompt 
-2. Run the following command to install common dependencies:  
-pip install flask tensorflow numpy pandas librosa scikit-learn  
+2. Run the following command to install common dependencies:
+``` bash  
+pip install flask tensorflow numpy pandas librosa scikit-learn
+```
 If you encounter an error while running the project, check the missing module in the error      
-message and install it using pip install <module_name>. 
+message and install it using ``` bash pip install <module_name>``` 
 Step 3: Run the Jupyter Notebooks 
 The main code is inside speech-emotion-recognizer-movie-recommendation.ipynb and 
 flask1.ipynb. 
 1. Open a terminal and navigate to the project folder:  
-cd path/to/project-folder 
-2. Start Jupyter Notebook:  
-jupyter notebook 
-3. Open and Run the following notebooks in order:  
+``` bash
+cd path/to/project-folder
+```
+2. Start Jupyter Notebook:
+``` bash
+jupyter notebook
+``` 
+4. Open and Run the following notebooks in order:  
 a. speech-emotion-recognizer-movie-recommendation.ipynb (Main model 
 execution) 
 b. flask1.ipynb (Flask API for local hosting) 
@@ -35,15 +41,21 @@ Step 4: Start the Flask Web App
 If the Flask server is not already running via the notebook, you might need to manually start it. 
 1. Navigate to the folder where Flask is set up. 
 2. If you want to run the Flask server without Jupyter Notebook, do this: 
-3. Convert the notebook to a Python script  
-jupyter nbconvert --to script flask1.ipynb 
-4. This will generate a file called flask1.py. 
-5. Rename it to app.py  
+3. Convert the notebook to a Python script
+``` bash 
+jupyter nbconvert --to script flask1.ipynb
+```
+5. This will generate a file called flask1.py. 
+6. Rename it to app.py
+``` bash
 mv flask1.py app.py   # On Linux/Mac 
-ren flask1.py app.py  # On Windows 
-6. Run Flask manually:  
-python app.py 
-7. Open your browser and go to: 
+ren flask1.py app.py  # On Windows
+```
+8. Run Flask manually:
+9. ``` bash
+python app.py
+```
+10. Open your browser and go to: 
 http://127.0.0.1:5000/ 
 Step 5: Test the Emotion-Based Movie Recommender 
 1. Upload an audio file (speech sample). 
