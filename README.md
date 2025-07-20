@@ -71,15 +71,11 @@ Link for Trained Model:
 https://drive.google.com/file/d/1Ka5RIAwvkVDy3qWR5V8QTmbOOsjhHOhT/view?usp=sharing 
 DEMO VIDEO                       
 https://drive.google.com/file/d/1B8wypc7OWDciAkM6gANHpNdKxuYOGbta/view?usp=sharing 
-File Structure 
-SPEECH-Emotion-Based-Movie-Recommender-System 
-├── flask1.ipynb 
-                # Flask server for web app 
-├── speech-emotion-recognizer-movie-recommendation.ipynb  # Main Model Code 
-├── model.json 
-                   # Trained Model Architecture 
-├── features.csv                   # Extracted Features from Speech 
-├── prototype.html
-                 # Web Page HTML 
-├── look.css 
-                      # Web Page CSS 
+SPEECH-Emotion-Based-Movie-Recommender-System
+├── flask1.ipynb                          # Flask server for web app
+├── speech-emotion-recognizer-movie-recommendation.ipynb  # Main model code
+├── model.json                           # Trained model architecture
+├── features.csv                         # Extracted features from speech
+├── prototype.html                      # Web page HTML
+├── look.css                            # Web page CSS
+
